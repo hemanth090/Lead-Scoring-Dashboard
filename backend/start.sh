@@ -1,0 +1,4 @@
+#!/bin/bash
+cd src
+python setup_model.py
+uvicorn main:app --host 0.0.0.0 --port ${PORT:-8000}
