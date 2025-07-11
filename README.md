@@ -2,11 +2,6 @@
 
 A web-based lead scoring dashboard that predicts lead intent using a machine learning model and a rule-based LLM Re-ranker, delivering scores via a FastAPI endpoint.
 
-## 🚀 Live Demo
-
-- **Frontend:** https://your-app.netlify.app
-- **Backend API:** https://your-backend.onrender.com
-- **API Documentation:** https://your-backend.onrender.com/docs
 
 ## 📋 Features
 
@@ -250,7 +245,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Support
 
-For support, email support@example.com or create an issue in the GitHub repository.
+For support create an issue in the GitHub repository.
 
 ## 🙏 Acknowledgments
 
