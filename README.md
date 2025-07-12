@@ -36,8 +36,7 @@ lead-scoring-dashboard/
 │   │   ├── main.py           # FastAPI application
 │   │   └── test_api.py       # Script to test the API endpoints
 │   ├── requirements.txt       # Python dependencies
-│   ├── Procfile              # Deployment configuration
-│   └── start.sh              # Startup script
+│   └── vercel.json           # Vercel deployment config
 ├── frontend/
 │   ├── src/
 │   │   ├── components/       # React components
@@ -146,32 +145,10 @@ lead-scoring-dashboard/
    - Connect your GitHub repository to Netlify
    - Set build command: `npm run build`
    - Set publish directory: `dist`
-   - Update `netlify.toml` with your backend URL
+   - Set environment variable `VITE_API_URL` to your Vercel backend URL
 
 3. **Environment Configuration:**
-   - Update the API base URL in `src/services/api.ts` with your deployed backend URL
-
-### GitHub Pages Deployment (Alternative)
-
-1. **Install gh-pages:**
-   ```bash
-   npm install --save-dev gh-pages
-   ```
-
-2. **Add deployment scripts to package.json:**
-   ```json
-   {
-     "scripts": {
-       "predeploy": "npm run build",
-       "deploy": "gh-pages -d dist"
-     }
-   }
-   ```
-
-3. **Deploy:**
-   ```bash
-   npm run deploy
-   ```
+   - The API base URL in `src/services/api.ts` will automatically use the environment variable
 
 ## 📊 API Endpoints
 
@@ -250,7 +227,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Support
 
-For support, email support@example.com or create an issue in the GitHub repository.
+For support create an issue in the GitHub repository.
 
 ## 🙏 Acknowledgments
 

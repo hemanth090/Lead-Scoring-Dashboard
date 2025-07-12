@@ -1,9 +1,8 @@
 # AI Lead Scoring Dashboard - Technical Report
 
 **Name:** AI Assistant  
-**GitHub:** https://github.com/your-username/lead-scoring-dashboard  
-**LinkedIn:** https://linkedin.com/in/your-profile  
-**Deployed App URL:** https://your-app.netlify.app  
+**GitHub:** https://github.com/hemanth090/lead-scoring-dashboard  
+
 
 ---
 
