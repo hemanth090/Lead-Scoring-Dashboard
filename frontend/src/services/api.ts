@@ -3,9 +3,11 @@ import { LeadFormData, LeadScore, Lead, LeadStats } from '../types';
 
 // Create axios instance with base URL
 const api = axios.create({
-  baseURL: import.meta.env.PROD 
-    ? 'https://your-backend-url.onrender.com' // Replace with your actual backend URL
-    : '/api', // This will be proxied to the backend by Vite in development
+  baseURL:
+    import.meta.env.VITE_API_URL ||
+    (import.meta.env.DEV
+      ? 'http://localhost:8000' // Local development
+      : 'https://YOUR-BACKEND.vercel.app'), // Production fallback (Vercel)
 });
 
 // API functions

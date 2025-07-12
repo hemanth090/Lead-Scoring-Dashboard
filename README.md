@@ -5,8 +5,8 @@ A web-based lead scoring dashboard that predicts lead intent using a machine lea
 ## 🚀 Live Demo
 
 - **Frontend:** https://your-app.netlify.app
-- **Backend API:** https://your-backend.onrender.com
-- **API Documentation:** https://your-backend.onrender.com/docs
+- **Backend API:** https://your-backend.vercel.app
+- **API Documentation:** https://your-backend.vercel.app/docs
 
 ## 📋 Features
 
@@ -121,12 +121,12 @@ lead-scoring-dashboard/
 
 ## 🚀 Deployment
 
-### Backend Deployment (Render/Fly.io)
+### Backend Deployment (Vercel)
 
-1. **Create a new web service on Render:**
-   - Connect your GitHub repository
-   - Set build command: `pip install -r requirements.txt`
-   - Set start command: `cd src && python setup_model.py && uvicorn main:app --host 0.0.0.0 --port $PORT`
+1. **Deploy to Vercel:**
+   - Connect your GitHub repository to Vercel
+   - Vercel will automatically detect the `vercel.json` configuration
+   - The build process will install dependencies and setup the model
 
 2. **Environment Variables:**
    - No additional environment variables required for basic setup
@@ -257,4 +257,4 @@ For support, email support@example.com or create an issue in the GitHub reposito
 - Built with FastAPI, React, and scikit-learn
 - Styled with Tailwind CSS
 - Charts powered by Chart.js
-- Deployed on Netlify and Render
+- Deployed on Netlify and Vercel
